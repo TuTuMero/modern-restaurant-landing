@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pa' Otro Lao | Coffee Shop & Lounge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
+        h1, h2 { font-family: 'Playfair Display', serif; }
+        .gold-text { color: #D4AF37; }
+        .gold-bg { background-color: #D4AF37; }
+        .gold-border { border-color: #D4AF37; }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <nav class="flex justify-between items-center p-4 md:p-6 border-b border-gray-800 sticky top-0 bg-black z-50">
+        <div class="text-xl md:text-2xl font-bold gold-text tracking-tighter uppercase">PA' OTRO LAO</div>
+        <div class="flex items-center space-x-6">
+            <a href="menu.html" class="text-[10px] md:text-sm uppercase tracking-widest hover:text-yellow-500 transition font-semibold">Menú</a>
+            <a href="https://wa.me/18092479909" class="gold-bg text-black px-4 py-2 rounded-full font-bold text-[10px] md:text-xs uppercase">Reservar</a>
+        </div>
+    </nav>
+
+    <section class="relative min-h-[75vh] flex items-center justify-center text-center bg-cover bg-center px-4" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=1000');">
+        <div class="max-w-3xl">
+            <h1 class="text-4xl md:text-7xl mb-4 leading-tight uppercase">Tu espacio <br class="md:hidden"> <span class="gold-text">exclusivo & chill</span></h1>
+            <p class="text-base md:text-xl text-gray-300 mb-10 font-light italic text-balance">Cafés, cócteles y momentos inolvidables en el corazón de Santiago.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 px-6">
+                <a href="menu.html" class="gold-bg text-black px-10 py-4 rounded-md font-bold transition transform active:scale-95 text-center text-sm">VER MENÚ DIGITAL</a>
+                <a href="#contacto" class="border gold-border gold-text px-10 py-4 rounded-md font-bold hover:bg-white hover:text-black transition text-center text-[10px] tracking-widest uppercase">Cómo llegar</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 text-center">
+        <div class="cursor-pointer" onclick="window.location.href='menu.html'">
+            <div class="text-4xl mb-4">☕</div>
+            <h3 class="text-lg font-bold mb-2 uppercase gold-text tracking-widest">Cafetería</h3>
+            <p class="text-gray-400 text-sm">El aroma que despierta tus sentidos cada mañana.</p>
+        </div>
+        <div class="cursor-pointer" onclick="window.location.href='menu.html'">
+            <div class="text-4xl mb-4">🍸</div>
+            <h3 class="text-lg font-bold mb-2 uppercase gold-text tracking-widest">Mixología</h3>
+            <p class="text-gray-400 text-sm">Cócteles de autor diseñados para tus mejores noches.</p>
+        </div>
+        <div class="cursor-pointer" onclick="window.location.href='menu.html'">
+            <div class="text-4xl mb-4">🍽️</div>
+            <h3 class="text-lg font-bold mb-2 uppercase gold-text tracking-widest">Gastronomía</h3>
+            <p class="text-gray-400 text-sm">Platos gourmet para compartir en un ambiente único.</p>
+        </div>
+    </section>
+
+    <section id="contacto" class="bg-zinc-900/50 py-16 px-4 border-t border-zinc-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl mb-12 gold-text uppercase tracking-widest">Visítanos</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left border border-zinc-800 p-8 rounded-xl bg-black/40">
+                <div class="border-b border-zinc-800 md:border-b-0 pb-6 md:pb-0">
+                    <h4 class="font-bold gold-text uppercase mb-2 text-[10px] tracking-[0.2em]">Horario</h4>
+                    <p class="text-gray-400 text-sm italic mb-1">Lunes a Domingos</p>
+                    <p class="text-xl">8:00 AM - 11:00 PM</p>
+                </div>
+                <div>
+                    <h4 class="font-bold gold-text uppercase mb-2 text-[10px] tracking-[0.2em]">Ubicación</h4>
+                    <p class="text-gray-400 text-sm italic mb-1">Cerros de Gurabo, Santiago</p>
+                    <p class="text-xl leading-snug">Calle Doctor Virgilio Almanzar #16</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 space-y-4">
+                <p class="text-[10px] text-gray-500 font-bold uppercase tracking-[0.4em]">Conecta con nosotros</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="https://www.instagram.com/paotrolaord/" target="_blank" class="w-full sm:w-auto px-10 py-3 border border-zinc-700 rounded-full hover:gold-border hover:gold-text transition text-[10px] uppercase tracking-widest font-bold">📸 Instagram</a>
+                    <a href="https://wa.me/18092479909" target="_blank" class="w-full sm:w-auto px-10 py-3 border border-zinc-700 rounded-full hover:gold-border hover:gold-text transition text-[10px] uppercase tracking-widest font-bold">💬 WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-[9px] text-gray-700 border-t border-zinc-900 uppercase tracking-[0.5em]">
+        &copy; 2026 Pa' Otro Lao. Santiago, RD. <br>
+        <span class="opacity-40 block mt-2">Diseño por TuTu Tec.</span>
+    </footer>
+
+</body>
+</html>
